@@ -1,0 +1,47 @@
+{
+  "name": "lyazidi-bo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.4",
+    "apexcharts": "^3.41.1",
+    "chance": "^1.1.11",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "file-saver": "^2.0.5",
+    "firebase": "^7.24.0",
+    "formik": "^2.2.9",
+    "json-server": "^0.17.3",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.1",
+    "react-data-table-component": "^7.5.3",
+    "react-dom": "^18.2.0",
+    "react-draft-wysiwyg": "^1.15.0",
+    "react-flatpickr": "^3.10.13",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.7.1",
+    "react-modern-drawer": "^1.1.2",
+    "react-paginate": "^8.2.0",
+    "react-router-dom": "^6.4.4",
+    "react-spinners": "^0.13.7",
+    "recharts": "^2.7.3",
+    "xlsx": "^0.18.5",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4",
+    "vite": "^3.2.3"
+  }
+}
