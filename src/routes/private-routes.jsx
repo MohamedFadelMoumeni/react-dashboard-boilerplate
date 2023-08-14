@@ -1,8 +1,7 @@
 import React from "react";
 
-const Dashboard = React.lazy(() => import("../pages/dashboard"));
+const Dashboard = React.lazy(() => import("../pages/statistics"));
 const Tables = React.lazy(() => import("../pages/tables"));
-const Statistics = React.lazy(() => import("../pages/statistics"));
 const Forms = React.lazy(() => import("../pages/forms"));
 export default [
   {
@@ -22,7 +21,7 @@ export default [
   },
   {
     id: "every_route",
-    element: <Statistics />,
+    element: <Dashboard />,
     path: "*",
   },
 ];

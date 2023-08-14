@@ -1,5 +1,6 @@
 import IconForm from "../components/forms/icon-form";
 import MultiColumnsForm from "../components/forms/multicolumn-form";
+import MultiStepForm from "../components/forms/multiform";
 import SimpleForm from "../components/forms/simple-form";
 const Forms = () => {
   return (
@@ -12,7 +13,9 @@ const Forms = () => {
           <IconForm />
         </div>
       </div>
+
       <MultiColumnsForm />
+      <MultiStepForm />
     </div>
   );
 };

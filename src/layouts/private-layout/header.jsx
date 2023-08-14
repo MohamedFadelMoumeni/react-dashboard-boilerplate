@@ -40,6 +40,7 @@ const Header = () => {
               <Menu.Item>
                 {({ active }) => (
                   <button
+                    onClick={() => setAdmin(null)}
                     className={`${
                       active ? "bg-cyan-600 text-white" : "text-gray-900"
                     } group flex w-full space-x-2 items-center rounded-md px-2 py-2 text-sm`}

@@ -2,7 +2,7 @@ import { Field, Form, Formik } from "formik";
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
-import Logo from "../assets/LYAZIDI-Assurances-logo.png";
+import Logo from "../assets/logo.ico";
 import AuthInput from "../components/UI/form-elements/auth-input";
 import { AdminContext } from "../context/admin.context";
 
@@ -30,7 +30,7 @@ const Login = () => {
         </h1>
         <Formik
           validationSchema={validationSchama}
-          initialValues={{ email: "", password: "" }}
+          initialValues={{ email: "admin@gmail.com", password: "admin20002" }}
           onSubmit={(values) => {
             setAdmin(values);
           }}

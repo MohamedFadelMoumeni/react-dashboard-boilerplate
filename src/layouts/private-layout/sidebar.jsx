@@ -1,23 +1,14 @@
 import React from "react";
-import {
-  BiChevronLeft,
-  BiChevronRight,
-  BiHomeAlt,
-  BiLocationPlus,
-  BiNews,
-} from "react-icons/bi";
-import { BsTextParagraph } from "react-icons/bs";
+import { BiChevronLeft, BiChevronRight, BiHomeAlt } from "react-icons/bi";
 import { CiViewTable } from "react-icons/ci";
-import { FiPaperclip, FiUsers } from "react-icons/fi";
-import { IoMdPaper } from "react-icons/io";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.ico";
 import NavItem from "../../components/UI/nav-item";
 
 const Sidebar = ({ open, setOpen }) => {
   return (
     <div
       className={`hidden md:flex  ${
-        open ? "w-62" : "w-20"
+        open ? "w-64" : "w-20"
       } fixed top-0 bottom-0 left-0 h-screen bg-white drop-shadow-md/80 border-r-[1px] shadow-lg  `}
     >
       <div className={`w-full h-full ${open ? "p-4" : "p-3"} relative`}>
@@ -52,43 +43,6 @@ const Sidebar = ({ open, setOpen }) => {
             icon={<CiViewTable size={22} />}
             title="Tables"
             href="/tables"
-          />
-          <NavItem
-            open={open}
-            icon={<IoMdPaper size={22} />}
-            title="Devis Auto"
-            href="/devis-auto"
-          />
-
-          <NavItem
-            open={open}
-            icon={<FiPaperclip size={22} />}
-            title="Réclamation"
-            href="/reclamation"
-          />
-          <NavItem
-            open={open}
-            icon={<FiUsers size={22} />}
-            title="Contacts"
-            href="/contacts"
-          />
-          <NavItem
-            open={open}
-            icon={<BsTextParagraph size={22} />}
-            title="Blog"
-            href="/blog"
-          />
-          <NavItem
-            open={open}
-            icon={<BiNews size={22} />}
-            title="Actualités"
-            href="/news"
-          />
-          <NavItem
-            open={open}
-            icon={<BiLocationPlus size={22} />}
-            title="Agences et Partenaires"
-            href="/agence-partenaires"
           />
         </ul>
       </div>
